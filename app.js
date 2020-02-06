@@ -23,7 +23,6 @@ router.get('/music',function(req,res){
     res.render('music');
 });
 
-
 app.use('/',router);
 
 const port = process.env.PORT || 3000;
