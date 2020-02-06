@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/stylesheets/music.css">
+</head>
+<body>
+    <div id="bg">
+        <div id="blackLayer"></div>
+        <img src="https://i.pinimg.com/originals/8e/27/58/8e2758477b11d7c44d8defe9bf08ffb6.jpg"/>
+    </div>
+    <div id="main">
+        <div id="image">
+            <img src="https://i.pinimg.com/originals/8e/27/58/8e2758477b11d7c44d8defe9bf08ffb6.jpg"/>
+        </div>
+        <div id="player">
+            <div id="songTitle">Demo</div>
+            <div id="buttons">
+                <button id="pre" onclick="pre()"><img src="/images/Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="/images/Play.png"/></button>
+                <button id="next" onclick="next()"><img src="/images/Next.png" height="90%" width="90%"/></button>
+            </div>
+            
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/music.js"></script>
+    
+</body>
+</html>

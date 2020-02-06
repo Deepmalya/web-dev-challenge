@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/mainpage.css">
+    <title>Web-Dev</title>
+</head>
+<body>
+    <div class="preload">
+        <img class="airplane" src="/images/airplane.png" alt="airplane">
+        <h3>Landing on the website...</h3>
+        <img class="cloud1" src="/images/cloud.png" alt="cloud1">
+        <img class="cloud2" src="/images/cloud.png" alt="cloud2">
+        <img class="cloud3" src="/images/cloud.png" alt="cloud3">
+    </div>
+
+    
+    <section>
+        
+        <ul class="menu">
+            <li>
+                <a class="btn btn-lg btn-success" href="/weather">Weather App</a>
+            </li>
+            <li><a class="btn btn-lg btn-success" href="/email">Email App</a></li>
+           <li><a class="btn btn-lg btn-success" href="/music">Music Player App</a></li>
+       </ul> 
+    </section>
+   
+    <script>
+        window.addEventListener('load', () => {
+          const preload = document.querySelector('.preload');
+          preload.classList.add('preload-finish');
+        });
+    </script>
+</body>
+</html>

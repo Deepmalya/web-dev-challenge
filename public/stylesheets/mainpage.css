@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.preload{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #77b3d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease 3s;
+  }
+  
+  .cloud1, .cloud2, .cloud3{
+    height: 100px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+  
+  .cloud1{
+    top: 25%;
+    transform: translate(100%, -25%);
+    animation: clouds 13s ease infinite;
+  }
+  .cloud2{
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation: clouds 20s ease infinite 2s;
+  }
+  .cloud3{
+    top: 75%;
+    transform: translate(100%, -75%);
+    animation: clouds 16s ease infinite 1.5s;
+  }
+  
+  .airplane{
+    height: 200px;
+    z-index: 1;
+    animation: airplane 1s ease infinite alternate;
+  }
+  .preload h3{
+    position: absolute;
+    top: 75%;
+    transform: translateY(-75%);
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  
+  .preload-finish{
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  @keyframes airplane{
+    from{
+      transform: translateY(0px);
+    }
+    to{
+      transform: translateY(50px);
+    }
+  }
+  
+  @keyframes clouds{
+    from{
+      right: 0%;
+    }
+    to{
+      right: 130%;
+    }
+  }
+  
+.menu { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li { 
+    width: 100%;
+    height: 33.33%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:nth-child(1) { 
+    background-image: url(https://wallpaperaccess.com/full/854164.jpg);
+}
+ul li:nth-child(2) { 
+    background-image: url(https://www.elo.com/files/public/images/01_solutions/01_general-solutions/banner_640_loesungen_email_management_de_v01.jpg);
+}
+ul li:nth-child(3) { 
+    background-image: url(https://www.dem-radio.com/wp-content/uploads/2018/06/cropped-red-vinyl-disk-turntable-music-hd-wallpaper-zoomwalls-music-wallpaper-hd-wallpapers-for-walls-bedroom-download-android-iphone-border-1080p-free.jpg);
+}
+
+ul li .btn{
+     z-index: -0;
+    font-family: Arial, Helvetica, sans-serif;
+}
